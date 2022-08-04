@@ -1,0 +1,388 @@
+@font-face {
+    font-family: muliExtrabold;
+    src: url(MULI-EXTRABOLD\ \(1\).TTF);
+  }
+
+  @font-face {
+    font-family: muliExtralight;
+    src: url(MULI-EXTRALIGHT.TTF);
+  }
+
+  @font-face {
+    font-family: muliBold;
+    src: url(MULI-BOLD.TTF);
+  }
+
+  @font-face {
+    font-family: muliLight;
+    src: url(MULI-LIGHT.TTF);
+  }
+
+  @font-face {
+    font-family: muliMedium;
+    src: url(MULI-MEDIUM.TTF);
+    /* 3 */
+  }
+
+  @font-face {
+    font-family: muliRegular;
+    src: url(MULI-REGULAR.TTF);
+    /* 2 */
+  }
+
+  @font-face {
+    font-family: muliSemibold;
+    src: url(MULI-SEMIBOLD.TTF); 
+    /* 1 */
+  }
+  
+  body{
+    background-color: grey;
+    font-family: muliSemibold;
+  }
+
+  .logo{
+    position: absolute;
+    top:33px;
+    left:37px;
+    width: 127px;
+    height:123px;
+  }
+
+  .logo2{
+    position: absolute;
+    width: 370px;
+    height: 360px;
+    left: 112.5px;
+    top: 370px;
+    z-index: 0;
+    opacity: 0.2;
+  }
+
+  .App{
+    width : 595px;
+    /* height: 842px; */
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .Header{
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 4%;
+  }
+
+  .clinicName{
+    font-size: 24px;
+    font-family: muliExtrabold;
+    line-height: 30px;
+    color: #00B1E9;
+  }
+
+  .clinicISO{
+    font-size: 12px;
+    font-family: muliExtralight;
+    color: #4C4C4C;
+  } 
+  
+  .addressLine1{
+    font-size: 11px;
+    font-family: muliExtralight;
+    color: #4C4C4C;
+  }
+  
+  .addressLine2{
+    font-size: 11px;
+    font-family: muliExtralight;
+    color: #4C4C4C;
+  }
+  
+  .contactInfo{
+    font-size: 11px;
+    font-family: muliExtralight;
+    color: #4C4C4C;
+  }
+  
+  .emailID{
+    font-size: 11px;
+    font-family: muliExtralight;
+    color: #4C4C4C;
+  }
+
+  .line{ 
+    border: 2.5px solid #20B1ED;
+    width: 545px;
+    height: 0px;
+    margin: 0 auto;
+  }
+
+  .invoiceDetails{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .InvoiceHeader{
+    font-size: 16px;
+    color: #4C4C4C;
+    font-family: muliMedium;
+  }
+  
+  .invoiceNumber{
+    font-size: 12px;
+    color: #4C4C4C;
+  }
+  
+  .Date{ 
+    font-size: 12px;
+    color: #4C4C4C;
+  }
+
+  .PatientDetails{
+    width: 532px;
+    height: 104px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background: #FFFFFF;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(76, 76, 76, 0.26);
+    border-radius: 6px;
+  
+    padding-left: 10px;
+    padding-right: 10px;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr, 1fr;
+  }
+  
+  .patientID{
+    font-size: 14px;
+    color: #4C4C4C;
+  }
+  
+  .visitID{
+    font-size: 14px;
+    color: #4C4C4C;
+  }
+  
+  .age{
+    font-size: 14px;
+    color: #4C4C4C;
+
+  }
+  
+  .patientName{
+    font-size: 14px;
+    color: #4C4C4C;
+  }
+  
+  .gender{
+    font-size: 14px;
+    color: #4C4C4C;
+  }
+  
+  .patientContact{
+    font-size: 14px;
+    color: #4C4C4C;
+  }
+
+  .docDetails{
+  font-size: 14px;
+  font-family: muliMedium;
+  color: #4C4C4C;
+  
+  grid-column-start: 1;
+  grid-column-end: 4;
+  
+  text-align: center;
+  }
+
+  .TableHeader{
+    box-sizing: border-box;
+  
+    width: 540px;
+    height: 34px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    mix-blend-mode: normal;
+    border: 1px solid rgba(76, 76, 76, 0.33);
+    border-radius: 5px 5px 0px 0px;
+  
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .itemHeader{
+    font-size: 12px;
+    font-family: muliMedium;
+    position: absolute;
+    left: 10px;
+    color: #4C4C4C;
+    }
+  
+  .rateHeader{
+    font-size: 12px;
+    font-family: muliMedium;
+    color: #4C4C4C;
+    position: absolute;
+    left: 200px;
+  }
+  
+  .discountHeader{
+    font-size: 12px;
+    font-family: muliMedium;
+    color: #4C4C4C;
+    position: absolute;
+    left: 290px;
+  }
+  
+  .dueHeader{
+    font-size: 12px;
+    font-family: muliMedium;
+    color: #4C4C4C;
+    position: absolute;
+    left: 380px;
+  }
+  
+  .paidHeader{
+    font-size: 12px;
+    font-family: muliMedium;
+    color: #4C4C4C;
+    position: absolute;
+    left: 470px;
+  }
+
+  .Details2{
+    box-sizing: border-box;
+    width: 540px;
+    height: 34px;
+    border: 1px solid rgba(76, 76, 76, 0.33);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .item{
+    font-size: 12px;
+    color: #4C4C4C;
+  }
+
+  #i1{
+    position: absolute;
+    left: 10px;
+  }
+
+  #i2{
+    position: absolute;
+    left: 200px;
+  }
+  
+  #i3{
+    position: absolute;
+    left: 290px;
+  }
+
+  #i4{
+    position: absolute;
+    left: 380px;
+  }
+
+  #i5{
+    position: absolute;
+    left: 470px;
+  }
+
+
+
+  .payModeAndSummary{
+    display: flex;
+  }
+
+ .payMode{
+    font-size: 12px;
+    color: #4C4C4C;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+ .Summary{
+    text-align: right;
+    margin-left: 250px;
+    font-family: muliMedium;
+ } 
+
+
+
+  #summItem{
+    font-size: 12px;
+    color: #4C4C4C;
+    margin-left: 30px;
+    margin-top: 30px;
+    line-height: 1px;
+  }
+
+  .Footer{
+    position: relative;
+    width: 100%;
+    height: 180px;
+  }
+
+  #foot1{
+    position: absolute;
+    left: 33px;
+    top: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4C4C4C;
+    font-family: muliMedium;
+  }
+
+  #foot2{
+    position: absolute;
+    left: 33px;
+    top: 140px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4C4C4C;
+    font-family: muliMedium;
+  }
+
+  #foot3{
+    position: absolute;
+    left: 445px;
+    top: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4C4C4C;
+    text-align: center;
+    width: 137px;
+    font-family: muliMedium;
+  }
+
+  #foot4{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 470px;
+    top: 90px;
+  }
+  
+  .line2{ 
+    border: 2.5px solid #20B1ED;
+    width: 545px;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
