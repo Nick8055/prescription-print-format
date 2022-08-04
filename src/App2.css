@@ -54,7 +54,7 @@
     width: 370px;
     height: 360px;
     left: 112.5px;
-    top: 370px;
+    top: 250px;
     z-index: 0;
     opacity: 0.2;
   }
@@ -237,7 +237,7 @@
     font-family: muliMedium;
     color: #4C4C4C;
     position: absolute;
-    left: 200px;
+    left: 180px;
   }
   
   .discountHeader{
@@ -245,7 +245,7 @@
     font-family: muliMedium;
     color: #4C4C4C;
     position: absolute;
-    left: 290px;
+    left: 270px;
   }
   
   .dueHeader{
@@ -253,7 +253,7 @@
     font-family: muliMedium;
     color: #4C4C4C;
     position: absolute;
-    left: 380px;
+    left: 360px;
   }
   
   .paidHeader{
@@ -261,7 +261,7 @@
     font-family: muliMedium;
     color: #4C4C4C;
     position: absolute;
-    left: 470px;
+    left: 450px;
   }
 
   .Details2{
@@ -286,22 +286,22 @@
 
   #i2{
     position: absolute;
-    left: 200px;
+    left: 180px;
   }
   
   #i3{
     position: absolute;
-    left: 290px;
+    left: 270px;
   }
 
   #i4{
     position: absolute;
-    left: 380px;
+    left: 360px;
   }
 
   #i5{
     position: absolute;
-    left: 470px;
+    left: 450px;
   }
 
 

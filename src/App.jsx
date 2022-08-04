@@ -31,10 +31,10 @@ var roman;
 if(DD == 1 || DD == 21 || DD == 31){
   roman = 'st';
 }
-else if(DD == 2){
+else if(DD == 2 || DD == 22){
   roman = 'nd';
 }
-else if(DD == 3){
+else if(DD == 3 || DD == 23){
   roman = 'rd';
 }
 else{
@@ -86,15 +86,14 @@ function Details({desc, CN}){
   )
 }
 
-function Details2({item, rate, discount, due, paid}){
-  due = rate - discount - paid;
+function Details2({medicine, type, frequency, duration, instruction}){
   return(
     <div className="Details2">
-      <h1 className='item' id='i1'>{item}</h1>
-      <h1 className='item' id='i2'>{'₹ ' + rate}</h1>
-      <h1 className='item' id='i3'>{'₹ ' + discount}</h1>
-      <h1 className='item' id='i4'>{'₹ ' + due}</h1>
-      <h1 className='item' id='i5'>{'₹ ' + paid}</h1>
+      <h1 className='item' id='i1'>{medicine}</h1>
+      <h1 className='item' id='i2'>{type}</h1>
+      <h1 className='item' id='i3'>{frequency}</h1>
+      <h1 className='item' id='i4'>{duration}</h1>
+      <h1 className='item' id='i5'>{instruction}</h1>
     </div>
   )
 }
@@ -136,30 +135,25 @@ function App() {
       </div>
 
       <div className='TableHeader'>
-        <h1 className="itemHeader">Item</h1>
-        <h1 className="rateHeader">Rate</h1>
-        <h1 className="discountHeader">Discount</h1>
-        <h1 className="dueHeader">Due</h1>
-        <h1 className="paidHeader">Paid</h1>
+        <h1 className="itemHeader">Medicine</h1>
+        <h1 className="rateHeader">Type</h1>
+        <h1 className="discountHeader">Frequency</h1>
+        <h1 className="dueHeader">Duration</h1>
+        <h1 className="paidHeader">Instruction</h1>
       </div>
 
-      <Details2 item={'Root Canal'} rate={1000}  discount={250} paid={130}></Details2>
-      <Details2 item={'Therapy'} rate={1000}  discount={250} paid={390}></Details2>
-      <Details2 item={'Wisdom Tooth Removal'} rate={1000}  discount={250} paid={1}></Details2>
-      <Details2 item={'Wisdom Tooth Removal'} rate={1000}  discount={250} paid={0}></Details2>
-      <Details2 item={'Wisdom Tooth Removal'} rate={1000}  discount={250} paid={34}></Details2>
-      <Details2 item={'Wisdom Tooth Removal'} rate={1000}  discount={250} paid={13}></Details2>
-      <Details2 item={'Wisdom Tooth Removal'} rate={1000}  discount={250} paid={700}></Details2>
-      <Details2 item={'Wisdom Tooth Removal'} rate={1000}  discount={250} paid={67}></Details2>
+      <Details2 medicine={'MOX 500mg'} type={'Oral-Capsule'} frequency={'1-0-1'} duration={'30 days'} instruction={'Before Meal'}></Details2>
+      
 
-      <div className="payModeAndSummary">
+
+      {/* <div className="payModeAndSummary">
         <h1 className='payMode'>Payment Mode : {paymentMode}</h1>
         <div className="Summary">
           <h1 id='summItem'>Subtotal : ₹ {subTotal}</h1>
           <h1 id='summItem'>Paid :      ₹ {paidAmount}</h1>
           <h1 id='summItem'>Balance :      ₹ {balance}</h1>
         </div>
-      </div>
+      </div> */}
 
       <div className='Footer'>
         <h1 id='foot1'>Note : </h1>
